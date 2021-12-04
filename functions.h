@@ -4,4 +4,5 @@
 
 void summation(); //function that adds sums of nth power of 2 and function that gives terms till nth_term
 void AP_nth_term();
+void GP_nth_term();
 #endif // FUNCTIONS_H

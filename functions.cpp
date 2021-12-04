@@ -48,3 +48,26 @@ void AP_nth_term()
 
     cout << "sum of all terms of the sequence is : "<<sum <<"\n\n\n";
 }
+
+void GP_nth_term()
+{
+    float first_term,ratio,nth_term, n;
+    cout<< "enter first term of the sequence: ";
+    cin>>first_term;
+    cout<<"\n\nenter ratio between the terms: ";
+    cin>>ratio;
+    cout<<"\n\nenter number of terms: ";
+    cin>>n;
+
+    nth_term = first_term * pow(ratio, n - 1);
+    cout<<"\n\nnth term in the sequence: "<<nth_term<<"\n\n";
+    double sum = 0;
+    for(float i = 1.0; i <= n; i++)
+    {
+        float output = first_term * pow(ratio, i - 1);
+        cout <<"\n"<<"term no :"<<i <<" "<<output;
+        sum = sum + output;
+    }
+
+    cout << "\n\nsum of all terms of the sequence is : "<<sum <<"\n\n\n";
+}
