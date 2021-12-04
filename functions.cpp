@@ -19,3 +19,32 @@ void summation()
     }
     cout << "\n";
 }
+
+void AP_nth_term()
+{
+    int first_term,difference,n,nth_term;
+    cout<< "enter first term of the sequence: ";
+    cin>>first_term;
+    cout<<"\n\nenter difference between the sequence: ";
+    cin>>difference;
+    cout<<"\n\nenter number of terms: ";
+    cin>>n;
+
+    nth_term = first_term + (n-1) * difference;
+    cout<<"\n\nnth term in the sequence: "<<nth_term<<"\n\n";
+
+    int iter = 0;
+    int sum = 0;
+    for (int i = first_term; i <= nth_term; i = i + difference)
+    {
+        n = 1;
+        int term = i + (n-1) * difference;
+        iter = iter + 1;
+        n = n + 1;
+        sum = sum + term;
+        cout<< iter <<"term in the sequence: "<<term<<"\n\n";
+    }
+
+
+    cout << "sum of all terms of the sequence is : "<<sum <<"\n\n\n";
+}

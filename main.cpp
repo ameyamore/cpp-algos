@@ -5,6 +5,7 @@ using namespace std;
 
 int main()
 {
-    summation();
+    //summation();
+    AP_nth_term();
     return 0;
 }
